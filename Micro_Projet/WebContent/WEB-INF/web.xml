@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Micro_Projet</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <filter>
+	<filter-name>portier</filter-name>
+	<filter-class>com.ensa.controleur.FilterP</filter-class>
+  </filter>
+  
+  <filter-mapping>
+	<filter-name>portier</filter-name>
+	<servlet-name>Articles</servlet-name>
+	<servlet-name>Commandes</servlet-name>
+  </filter-mapping>
+  
+  <filter>
+	<filter-name>initiation</filter-name>
+	<filter-class>com.ensa.controleur.FilterRecherchePrenom</filter-class>
+  </filter>
+  
+  <filter-mapping>
+	<filter-name>initiation</filter-name>
+	<servlet-name>Articles</servlet-name>
+	<servlet-name>Commandes</servlet-name>
+  </filter-mapping>
+  
+  <servlet>
+  	<servlet-name>Inscription</servlet-name>
+  	<servlet-class>com.ensa.controleur.ServInscription</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Inscription</servlet-name>
+  	<url-pattern>/inscription</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Identification</servlet-name>
+  	<servlet-class>com.ensa.controleur.ServIdentification</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Identification</servlet-name>
+  	<url-pattern>/identification</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Accueil</servlet-name>
+  	<servlet-class>com.ensa.controleur.ServAccueil</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Accueil</servlet-name>
+  	<url-pattern>/accueil</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Deconnecter</servlet-name>
+  	<servlet-class>com.ensa.controleur.ServDeconnecter</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Deconnecter</servlet-name>
+  	<url-pattern>/deconnecter</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>Articles</servlet-name>
+  	<servlet-class>com.ensa.controleur.Servlet_affichage_articles</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Articles</servlet-name>
+  	<url-pattern>/articles</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Commandes</servlet-name>
+  	<servlet-class>com.ensa.controleur.Servlet_page_commandes</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Commandes</servlet-name>
+  	<url-pattern>/commandes</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Confirmer</servlet-name>
+  	<servlet-class>com.ensa.controleur.Servlet_passer_cmd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Confirmer</servlet-name>
+  	<url-pattern>/confirmer</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

@@ -1,0 +1,52 @@
+	#parent{
+		margin: 1.2rem 1.4rem;
+	}
+	#titre{
+		padding: .3rem;
+		border: solid 1px transparent;
+		border-bottom-color: black;
+		display: flex;
+		justify-content: space-between;	
+	}
+	.article{
+		width: clamp(200px, 60%, 600px);
+		margin: .5rem auto;
+		border: 1px solid;
+	}
+	.article > div{
+		display: flex;
+		justify-content: space-between;
+	}
+	.photo{
+		width: 70px;
+		height: 70px;
+		border: 1px solid;
+		border-width: 0px 1px 0px 0px;
+		background-position: 50% 50%;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	.boutons{
+		width: clamp(200px, 60%, 600px);
+		margin: .5rem auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	.boutons  a{
+		font-size: 1.2rem;
+		text-decoration: none;
+		color: #4A928B;
+	}
+	
+	.bouton{
+		font-size: 1.2rem;
+		text-decoration: none;
+		border: 1px solid;
+		padding: .7rem;
+		border-radius: .3rem;
+		color: white;
+		background-color: rgba(148,187,233,1);
+		cursor: pointer;
+	}

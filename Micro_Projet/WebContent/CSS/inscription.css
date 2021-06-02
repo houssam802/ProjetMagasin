@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+	#cadre{
+		margin:1rem auto;
+		width: 60%;
+		border-radius: .5%;
+		align-items: center;
+		box-shadow: 0 0 .1rem .2rem rgba(0,0,0,0.2);
+	}
+
+	input[type="submit"]{
+		outline: none;
+		border:none;
+		margin: .5rem;
+		padding: .4rem .8rem;
+		border-radius: .5rem;
+		color: white;
+		background: #4892C2;
+		font-size: 1.1rem;
+		cursor: pointer;
+	}
+	input[type="text"],
+	input[type="password"]{
+		font-size: 1.1rem;
+		background-color: white;
+		box-shadow: 0 0 .1rem .2rem rgba(0,0,0,0.2);
+		outline: none;
+		border: none;
+		padding: .1rem;
+		border-radius: .2rem;
+		width: 100%;
+	}
+	
+	.zone{
+		margin: .5rem auto;
+		width: 90%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.zone > *:nth-child(1){
+		flex: 1 1 15ch;
+		font-size: 1.1rem;
+	}
+	
+	.zone > *:nth-child(2){
+		flex: 1 1 40ch;
+		display: flex;
+		align-items: center;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.zone > *:nth-child(2) > *:nth-child(1){
+		flex: 1 1 25ch;
+	}
+	.zone > *:nth-child(2) > *:nth-child(2){
+		flex: 1 1 15ch;
+		margin-left: .5rem;
+	}
+	
